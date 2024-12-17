@@ -1,0 +1,56 @@
+{
+  "name": "@eik/vite-plugin",
+  "version": "1.0.0",
+  "description": "Vite plugin for loading import maps from a Eik server and applying the mapping to ECMAScript modules in preparation for upload to the same server.",
+  "type": "module",
+  "main": "./src/plugin.js",
+  "types": "./types/plugin.d.ts",
+  "files": [
+    "src",
+    "types"
+  ],
+  "scripts": {
+    "clean": "rimraf .tap node_modules types",
+    "test": "tap --disable-coverage --allow-empty-coverage",
+    "lint": "eslint .",
+    "lint:fix": "npm run lint -- --fix",
+    "start": "node --experimental-modules ./example/server.mjs",
+    "types": "run-s types:module types:test",
+    "types:module": "tsc",
+    "types:test": "tsc --project tsconfig.test.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/eik-lib/vite-plugin.git"
+  },
+  "bugs": {
+    "url": "https://github.com/eik-lib/vite-plugin/issues"
+  },
+  "homepage": "https://github.com/eik-lib/vite-plugin#readme",
+  "publishConfig": {
+    "access": "public"
+  },
+  "keywords": [
+    "vite-plugin"
+  ],
+  "author": "Finn.no",
+  "license": "MIT",
+  "dependencies": {
+    "@eik/rollup-plugin": "4.0.64"
+  },
+  "devDependencies": {
+    "@eik/eslint-config": "1.0.6",
+    "@eik/prettier-config": "1.0.1",
+    "@eik/semantic-release-config": "1.0.0",
+    "@eik/typescript-config": "1.0.0",
+    "eslint": "9.17.0",
+    "fastify": "5.2.0",
+    "npm-run-all2": "7.0.2",
+    "prettier": "3.3.3",
+    "rimraf": "6.0.1",
+    "vite": "6.0.3",
+    "semantic-release": "24.2.0",
+    "tap": "21.0.1",
+    "typescript": "5.7.2"
+  }
+}
