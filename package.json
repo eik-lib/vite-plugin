@@ -10,8 +10,9 @@
     "types"
   ],
   "scripts": {
-    "clean": "rimraf .tap node_modules types",
-    "test": "tap --disable-coverage --allow-empty-coverage",
+    "clean": "rimraf node_modules types",
+    "test": "node --test --experimental-test-snapshots",
+    "test:update": "node --test --test-update-snapshots --experimental-test-snapshots",
     "lint": "eslint .",
     "lint:fix": "npm run lint -- --fix",
     "start": "node --experimental-modules ./example/server.mjs",
@@ -50,7 +51,6 @@
     "rimraf": "6.0.1",
     "vite": "6.0.3",
     "semantic-release": "24.2.0",
-    "tap": "21.0.1",
     "typescript": "5.7.2"
   }
 }

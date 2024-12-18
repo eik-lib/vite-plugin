@@ -1,0 +1,19 @@
+exports[`plugin() - Import map defined through constructor "maps" argument take precedence over import map defined in eik.json 1`] = `
+"import { html as t } from \\"lit-html/lit-html\\";\\nimport { css as e } from \\"lit-html\\";\\nimport { LitElement as o } from \\"https://cdn.eik.dev/lit-element/v2\\";\\nclass p extends o {\\n  static get styles() {\\n    return [\\n      e\`\\n        :host {\\n          color: red;\\n        }\\n      \`\\n    ];\\n  }\\n  render(r) {\\n    return t\`<p>Hello \${r}!</p>\`;\\n  }\\n}\\nexport {\\n  p as default\\n};\\n"
+`;
+
+exports[`plugin() - Import map defined through constructor "maps" argument take precedence over import map defined through constructor "urls" argument 1`] = `
+"import { html as t } from \\"lit-html/lit-html\\";\\nimport { css as e } from \\"lit-html\\";\\nimport { LitElement as o } from \\"https://cdn.eik.dev/lit-element/v2\\";\\nclass p extends o {\\n  static get styles() {\\n    return [\\n      e\`\\n        :host {\\n          color: red;\\n        }\\n      \`\\n    ];\\n  }\\n  render(r) {\\n    return t\`<p>Hello \${r}!</p>\`;\\n  }\\n}\\nexport {\\n  p as default\\n};\\n"
+`;
+
+exports[`plugin() - Import map defined through constructor "urls" argument take precedence over import map defined in eik.json 1`] = `
+"import { html as t } from \\"lit-html/lit-html\\";\\nimport { css as e } from \\"lit-html\\";\\nimport { LitElement as o } from \\"https://cdn.eik.dev/lit-element/v2\\";\\nclass p extends o {\\n  static get styles() {\\n    return [\\n      e\`\\n        :host {\\n          color: red;\\n        }\\n      \`\\n    ];\\n  }\\n  render(r) {\\n    return t\`<p>Hello \${r}!</p>\`;\\n  }\\n}\\nexport {\\n  p as default\\n};\\n"
+`;
+
+exports[`plugin() - import map fetched from a URL 1`] = `
+"import { html as t } from \\"https://cdn.eik.dev/lit-html/v2\\";\\nimport { css as e } from \\"https://cdn.eik.dev/lit-html/v1\\";\\nimport { LitElement as o } from \\"https://cdn.eik.dev/lit-element/v2\\";\\nclass p extends o {\\n  static get styles() {\\n    return [\\n      e\`\\n        :host {\\n          color: red;\\n        }\\n      \`\\n    ];\\n  }\\n  render(r) {\\n    return t\`<p>Hello \${r}!</p>\`;\\n  }\\n}\\nexport {\\n  p as default\\n};\\n"
+`;
+
+exports[`plugin() - import map fetched from a URL via eik.json 1`] = `
+"import { html as t } from \\"https://cdn.eik.dev/lit-html/v2\\";\\nimport { css as e } from \\"https://cdn.eik.dev/lit-html/v1\\";\\nimport { LitElement as o } from \\"https://cdn.eik.dev/lit-element/v2\\";\\nclass p extends o {\\n  static get styles() {\\n    return [\\n      e\`\\n        :host {\\n          color: red;\\n        }\\n      \`\\n    ];\\n  }\\n  render(r) {\\n    return t\`<p>Hello \${r}!</p>\`;\\n  }\\n}\\nexport {\\n  p as default\\n};\\n"
+`;
