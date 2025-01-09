@@ -1,0 +1,6 @@
+.DS_Store
+.idea/
+.tap/
+dist/
+node_modules/
+types/
