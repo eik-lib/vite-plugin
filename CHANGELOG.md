@@ -1,3 +1,15 @@
+# [2.0.0](https://github.com/eik-lib/vite-plugin/compare/v1.0.2...v2.0.0) (2025-05-08)
+
+
+### Bug Fixes
+
+* update eik/rollup-plugin ([#22](https://github.com/eik-lib/vite-plugin/issues/22)) ([6546f76](https://github.com/eik-lib/vite-plugin/commit/6546f7614017159391638f60cf9b80c799a6195a))
+
+
+### BREAKING CHANGES
+
+* Drop support for Node 18.
+
 ## [1.0.2](https://github.com/eik-lib/vite-plugin/compare/v1.0.1...v1.0.2) (2025-03-31)
 
 
