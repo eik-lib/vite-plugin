@@ -43,7 +43,7 @@
     "@eik/rollup-plugin": "5.0.4"
   },
   "devDependencies": {
-    "@eik/eslint-config": "1.0.16",
+    "@eik/eslint-config": "1.0.18",
     "@eik/prettier-config": "1.0.1",
     "@eik/semantic-release-config": "1.0.4",
     "@eik/typescript-config": "1.0.0",
