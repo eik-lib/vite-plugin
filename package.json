@@ -40,7 +40,7 @@
     "node": ">=20"
   },
   "dependencies": {
-    "@eik/rollup-plugin": "5.0.10"
+    "@eik/rollup-plugin": "5.0.11"
   },
   "devDependencies": {
     "@eik/eslint-config": "1.0.20",
