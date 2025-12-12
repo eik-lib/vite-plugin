@@ -40,21 +40,21 @@
     "node": ">=20"
   },
   "dependencies": {
-    "@eik/rollup-plugin": "5.0.13"
+    "@eik/rollup-plugin": "5.0.14"
   },
   "devDependencies": {
     "@eik/eslint-config": "1.0.23",
     "@eik/prettier-config": "1.0.1",
-    "@eik/semantic-release-config": "1.0.9",
+    "@eik/semantic-release-config": "1.0.10",
     "@eik/typescript-config": "1.0.0",
     "@types/node": "24.10.1",
     "eslint": "9.39.1",
     "fastify": "5.6.2",
     "npm-run-all2": "8.0.4",
-    "prettier": "3.7.3",
+    "prettier": "3.7.4",
     "rimraf": "6.1.2",
     "semantic-release": "25.0.2",
     "typescript": "5.9.3",
-    "vite": "7.2.4"
+    "vite": "7.2.7"
   }
 }
