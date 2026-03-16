@@ -1,3 +1,10 @@
+## [2.0.17](https://github.com/eik-lib/vite-plugin/compare/v2.0.16...v2.0.17) (2026-03-16)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @eik/rollup-plugin to v5.0.27 ([#63](https://github.com/eik-lib/vite-plugin/issues/63)) ([0b40ee8](https://github.com/eik-lib/vite-plugin/commit/0b40ee8028163f6c39123a3522e30fd5a46c6de0))
+
 ## [2.0.16](https://github.com/eik-lib/vite-plugin/compare/v2.0.15...v2.0.16) (2026-03-02)
 
 
