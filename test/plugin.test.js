@@ -433,3 +433,48 @@ test("plugin() - mixed import + require of the same mapped specifier in one buil
 		.join("\n\n");
 	t.assert.snapshot(chunks);
 });
+
+test("plugin() - require() of an unmapped specifier passes through", async (t) => {
+	const app = fastify();
+	app.server.keepAliveTimeout = 20;
+	app.get("/one", (_, reply) => {
+		reply.send({
+			imports: { "lit-element": "https://cdn.eik.dev/lit-element/v2" },
+		});
+	});
+	const address = await app.listen({ host: "0.0.0.0", port: 50256 });
+	t.after(async () => {
+		await app.close();
+	});
+
+	const result = await build({
+		logLevel: "silent",
+		plugins: [eik({ urls: [`${address}/one`] })],
+		build: {
+			write: false,
+			lib: {
+				entry: path.resolve(
+					__dirname,
+					"..",
+					"fixtures",
+					"modules",
+					"require-unmapped",
+					"main.cjs",
+				),
+				name: "test",
+				formats: ["es"],
+			},
+			rollupOptions: {
+				onwarn: () => {},
+				external: ["some-unmapped-package"],
+			},
+		},
+	});
+
+	const chunks = result[0].output
+		.filter((o) => o.type === "chunk")
+		.sort((a, b) => a.fileName.localeCompare(b.fileName))
+		.map((o) => `// === ${o.fileName} ===\n${clean(o.code)}`)
+		.join("\n\n");
+	t.assert.snapshot(chunks);
+});
