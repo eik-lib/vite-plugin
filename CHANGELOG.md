@@ -1,3 +1,26 @@
+# [3.0.0](https://github.com/eik-lib/vite-plugin/compare/v2.0.23...v3.0.0) (2026-06-04)
+
+
+* feat!: vite 8 / rolldown compatibility ([#76](https://github.com/eik-lib/vite-plugin/issues/76)) ([17052c1](https://github.com/eik-lib/vite-plugin/commit/17052c1a02f47a85c9e803d2fc9b56dad96ffc4a)), closes [vite.dev/guide/migration#require-calls-for-externalized-modules](https://github.com/vite.dev/guide/migration/issues/require-calls-for-externalized-modules)
+
+
+### BREAKING CHANGES
+
+* targets Vite 8+ as the supported runtime. Output may
+include one additional virtual chunk per require()-mapped specifier.
+
+* test(plugin): cover require() of mapped specifier
+
+test(fixtures): add cjs fixture for require() tests
+
+* test(plugin): cover mixed import + require for the same specifier
+
+test(fixtures): add mixed import + require fixture
+
+* test(plugin): cover require() of unmapped dependency
+
+* docs(readme): document Vite 8 / Rolldown require handling
+
 ## [2.0.23](https://github.com/eik-lib/vite-plugin/compare/v2.0.22...v2.0.23) (2026-05-18)
 
 
