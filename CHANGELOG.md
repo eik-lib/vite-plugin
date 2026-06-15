@@ -1,3 +1,10 @@
+## [3.0.2](https://github.com/eik-lib/vite-plugin/compare/v3.0.1...v3.0.2) (2026-06-15)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @eik/common to v5.1.33 ([#78](https://github.com/eik-lib/vite-plugin/issues/78)) ([268beea](https://github.com/eik-lib/vite-plugin/commit/268beea53225b18ed939e48709158769a16988f5))
+
 ## [3.0.1](https://github.com/eik-lib/vite-plugin/compare/v3.0.0...v3.0.1) (2026-06-08)
 
 
