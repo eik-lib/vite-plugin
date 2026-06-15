@@ -40,7 +40,7 @@
     "node": ">=20"
   },
   "dependencies": {
-    "@eik/common": "5.1.31"
+    "@eik/common": "5.1.33"
   },
   "devDependencies": {
     "@eik/eslint-config": "1.0.25",
