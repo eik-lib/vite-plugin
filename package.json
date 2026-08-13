@@ -43,18 +43,18 @@
     "@eik/common": "5.1.34"
   },
   "devDependencies": {
-    "@eik/eslint-config": "1.0.25",
+    "@eik/eslint-config": "2.0.15",
     "@eik/prettier-config": "1.0.2",
-    "@eik/semantic-release-config": "1.0.18",
-    "@eik/typescript-config": "1.0.1",
-    "@types/node": "24.10.4",
-    "eslint": "9.39.5",
-    "fastify": "5.6.2",
-    "npm-run-all2": "8.0.4",
-    "prettier": "3.7.4",
+    "@eik/semantic-release-config": "1.0.19",
+    "@eik/typescript-config": "1.0.2",
+    "@types/node": "26.2.0",
+    "eslint": "10.8.1",
+    "fastify": "5.11.3",
+    "npm-run-all2": "9.0.3",
+    "prettier": "3.9.6",
     "rimraf": "6.1.3",
-    "semantic-release": "25.0.5",
-    "typescript": "5.9.3",
-    "vite": "8.0.16"
+    "semantic-release": "25.0.9",
+    "typescript": "7.0.2",
+    "vite": "8.2.1"
   }
 }
